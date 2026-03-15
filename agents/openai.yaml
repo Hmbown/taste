@@ -1,6 +1,9 @@
 interface:
   display_name: "Taste"
   short_description: "Domain-grounded judgment for creation"
+  icon_small: "./assets/taste-icon.svg"
+  icon_large: "./assets/taste-icon.svg"
+  brand_color: "#D9B26F"
   default_prompt: "Use $taste to ground this work in its domain, find the spine, and cut what does not earn its place."
 
 policy:

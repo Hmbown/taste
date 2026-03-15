@@ -107,3 +107,18 @@ To build a distributable zip for Claude-style installation:
 ```
 
 This writes `dist/taste.skill`.
+
+## Assets and release packaging
+
+- Brand assets live in `assets/`.
+- `agents/openai.yaml` exposes the icon and brand color for skill UIs.
+- GitHub Actions now builds `dist/taste.skill` automatically on tags matching `v*` and attaches it to a GitHub release.
+
+### Cut a release
+
+```sh
+git tag v0.3.1
+git push origin v0.3.1
+```
+
+That triggers the release workflow and publishes `taste.skill` as a release artifact.
