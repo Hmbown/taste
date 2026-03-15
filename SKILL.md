@@ -3,7 +3,7 @@ name: taste
 description: "Domain-grounded judgment for creation: code, visuals, documents, design, data artifacts, and other output where quality depends on choosing what not to include. Use this skill when the user wants something to feel authored rather than generated, when the brief says a draft feels off, when polish alone is insufficient, or when the deliverable is externally visible and the quality bar is shaped by practitioner norms. Triggers on requests like 'use taste', 'apply taste', 'make this good', 'tighten this', 'clean this up', 'less is more', 'this feels generated', or any creation task where judgment matters more than coverage. Do not use for exhaustive extraction, rote transformation, or work where comprehensiveness is the explicit goal."
 metadata:
   author: Hunter Bown
-  version: "0.3.0"
+  version: "0.1.0"
   style: instruction-only
   compatibility: Agent Skills compatible clients including Claude Code and OpenAI Codex-style agents
 ---

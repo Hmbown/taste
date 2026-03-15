@@ -117,8 +117,8 @@ This writes `dist/taste.skill`.
 ### Cut a release
 
 ```sh
-git tag v0.3.1
-git push origin v0.3.1
+git tag v0.1.0
+git push origin v0.1.0
 ```
 
 That triggers the release workflow and publishes `taste.skill` as a release artifact.
