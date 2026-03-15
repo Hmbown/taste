@@ -1,0 +1,7 @@
+interface:
+  display_name: "Taste"
+  short_description: "Domain-grounded judgment for creation"
+  default_prompt: "Use $taste to ground this work in its domain, find the spine, and cut what does not earn its place."
+
+policy:
+  allow_implicit_invocation: true

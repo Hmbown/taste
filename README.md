@@ -1,34 +1,43 @@
 # taste
 
-Domain-grounded judgment for AI agents. Teaches agents to understand what "good" looks like in a domain before they create — not after.
+Domain-grounded judgment for AI agents. `taste` teaches an agent to understand what good looks like in a domain before it creates, not after.
+
+## Repo layout
+
+```text
+taste/
+├── SKILL.md
+├── agents/
+│   └── openai.yaml
+└── references/
+    ├── DOMAIN_MODES.md
+    ├── ANTI_PATTERNS.md
+    └── EVALUATION.md
+```
 
 ## Install
 
-**Claude Code** — extract `taste.skill` to your skills directory:
+### Codex
+
+Link this repo into your local skills directory:
 
 ```sh
-unzip taste.skill -d ~/.claude/skills/
+mkdir -p ~/.codex/skills
+ln -sfn /path/to/taste ~/.codex/skills/taste
 ```
 
-Or copy the `taste/` folder to `~/.claude/skills/taste/` (global) or `.claude/skills/taste/` (per-repo).
+### Claude Code
 
-**Other agents** — copy `taste/` wherever your agent reads skill definitions. No runtime dependencies.
+Copy the folder to `~/.claude/skills/taste/` or `.claude/skills/taste/`.
 
-## Usage
+### Other agents
 
-```
-"Use taste on this component — it works but it feels generated."
-"Apply taste to this spec. What shouldn't be here?"
-"Create this landing page with taste — I don't want it to look like AI made it."
-```
+Copy the folder wherever your agent reads skill definitions. There are no runtime dependencies.
 
-## What's inside
+## Use
 
-```
-taste/
-├── SKILL.md              Core skill: grounding protocol, principles, workflow
-└── references/
-    ├── DOMAIN_MODES.md   Guidance for code, visual design, docs, data, architecture
-    ├── ANTI_PATTERNS.md   Ways agents fake taste — and how to catch each one
-    └── EVALUATION.md      Scoring rubric (30-point, weighted toward domain grounding)
+```text
+Use $taste on this component. It works, but it feels generated.
+Apply $taste to this spec and cut what does not earn its place.
+Create this landing page with $taste. I want it to feel authored.
 ```
